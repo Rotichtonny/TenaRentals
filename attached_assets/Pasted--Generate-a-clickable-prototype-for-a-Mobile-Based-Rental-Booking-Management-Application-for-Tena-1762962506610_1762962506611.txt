@@ -1,0 +1,123 @@
+# Generate a clickable prototype for a Mobile-Based Rental Booking & Management Application for Tenants, Landlords, Property Evaluators and Admins in Nairobi
+based on the Design Spec below:
+
+## 1. Product Overview
+- **Platform:** Mobile app
+- **Target Users:** Admins, Evaluators, Tenants and Landlords
+
+## 2. Core Objective
+- A mobile app that creates a trusted and efficient bridge between landlords and tenants. The core idea is to ensure every listed property is verified and physically inspected before it becomes available for rent, giving everyone peace of mind.
+
+## 3. Key User Flow
+
+### Visual Flow Summary
+- For a quick, at-a-glance understanding, here is the core flow: Admin Setup → Landlord Lists Property → Admin Approves for Inspection → Evaluator Verifies Physically → Property Goes Live → Tenant Books Viewing → Landlord Converts to Tenant → Tenant Signs & Pays
+- This structure ensures a clear, secure, and step-by-step process for every property listed on the platform.
+
+### User Flow
+
+#### Administrator User Flows
+
+##### 1. User Management Flow
+- View: Admin Dashboard → User Management section
+- Action: View Users List (showing all admins and evaluators)
+- Action: Click "Add New User"
+- View: User creation form
+- Action: Select role (Evaluator/Admin), fill details, save
+- Result: New user appears in Users List and receives invitation
+
+##### 2. Property Approval Flow
+- View: Admin Dashboard → Properties section
+- Action: View Pending Properties List (filtered by status)
+- Action: Select property to review details, photos, documents
+- Action: Click "Approve for Inspection"
+- View: Evaluator Assignment screen with Available Evaluators List
+- Action: Select evaluator, confirm assignment
+- Result: Property status changes to "Awaiting Evaluation"
+
+#### Landlord User Flows
+
+##### 1. Property Registration Flow
+
+- View: Landlord Dashboard → Properties section
+- Action: Click "Add New Property"
+- View: Property creation form with upload sections
+- Action: Enter property details, upload photos/documents, add units
+- Action: Submit for approval
+- Result: Property appears in My Properties List with "Pending Approval" status
+
+##### 2. Tenant Conversion Flow
+
+- View: Landlord Dashboard → Bookings section
+- Action: View Upcoming Viewings List
+- Action: After physical visit, select booking → "Convert to Tenant"
+- View: Rental agreement creation form
+- Action: Fill agreement terms, send to tenant
+- Result: Tenant notified, agreement appears in Tenant Agreements List
+
+#### Property Evaluator User Flows
+
+##### 1. Property Inspection Flow
+
+- View: Evaluator Dashboard → Assignments section
+- Action: View Assigned Properties List (with addresses/dates)
+- Action: Select property → view inspection checklist
+- Action: Conduct physical inspection, complete checklist
+- Action: Click "Approve Property"
+- Result: Property status changes to "Approved & Live"
+
+#### Tenant User Flows
+
+##### 1. Property Discovery & Booking Flow
+
+- View: Home screen → Property Search
+- Action: Browse Available Properties List (use filters/search)
+- Action: Select property → view full details/photos
+- Action: Click "Book Viewing" → select available time slot
+- Result: Booking confirmed, appears in My Bookings List
+
+##### 2. Rental Agreement & Payment Flow
+
+- View: Notifications screen → "New Rental Agreement" alert
+- Action: Navigate to Agreements List → select pending agreement
+- View: Agreement document viewer
+- Action: Review terms → "Sign Agreement"
+- View: Payment screen with amount breakdown
+- Action: Select payment method → complete payment
+- Result: Payment confirmed, appears in Payment History List
+
+
+## 4. Critical List Views by Role
+### Administrator:
+- Analytics Dashboard (platform overview)
+- Users List (manage team access)
+- Properties List (monitor approval pipeline)
+
+### Landlord:
+- Analytics Dashboard (platform overview)
+- My Properties List (track property status)
+- My Tenants List (view tenants)
+- Bookings List (manage viewings)
+- Maintenance Request List 
+
+### Property Evaluator:
+- Analytics Dashboard (platform overview)
+- Assigned Properties List (inspection schedule)
+- Completed Evaluations List (work history)
+
+### Tenant:
+- Available Properties List (search/browse)
+- Analytics Dashboard (platform overview)
+- My Bookings List (viewing appointments)
+- My Rentals List (Viewing rented properties)
+- Payment History List (transaction records)
+- Maintenance Request List (view maintenance request)
+
+## 5. Additional notes
+- Minimalist design with a clean layout and intuitive navigation.
+- Ability to filter properties/search by tenant
+- As per rental/booking management design, include all the necessary pages that I might have missed.
+- Register page is same for Landlord and Tenant
+- Login page is common and same for all the roles then it should redirect them to their respective dashboard.
+
+
